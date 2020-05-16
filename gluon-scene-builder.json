@@ -6,5 +6,15 @@
         "https://download2.gluonhq.com/scenebuilder/11.0.0/install/windows/x64/SceneBuilder-11.0.0.msi"
     ],
     "hash": "483df81431af3aa7eb9d2822d1e7c8e569a00aa83948337971f811ceeb4b4469",
-    "bin": "PFiles\\SceneBuilder\\SceneBuilder.exe"
+    "bin": "PFiles\\SceneBuilder\\SceneBuilder.exe",
+    "post_install": [
+        "mkdir $bin\\PFiles\\tmp",
+        "mkdir $bin\\PFiles\\tmp\\jar",
+        "wget https://raw.githubusercontent.com/gluonhq/scenebuilder/master/app/src/main/resources/com/oracle/javafx/scenebuilder/app/i18n/SceneBuilderApp_ja.properties -O $bin\\PFiles\\tmp\\SceneBuilderApp_ja.properties",
+        "7z x $bin\\PFiles\\SceneBuilder\\app\\scenebuilder-11.0.0-all.jar -o$bin\\PFiles\\tmp\\scenebuilder-11.0.0-all -y",
+        "cp $bin\\PFiles\\tmp\\SceneBuilderApp_ja.properties $bin\\PFiles\\tmp\\scenebuilder-11.0.0-all\\com\\oracle\\javafx\\scenebuilder\\app\\i18n\\SceneBuilderApp_ja.properties -Force",
+        "mv $bin\\PFiles\\SceneBuilder\\app\\scenebuilder-11.0.0-all.jar $bin\\PFiles\\SceneBuilder\\app\\scenebuilder-11.0.0-all.jar.org",
+        "7z a $bin\\PFiles\\SceneBuilder\\app\\scenebuilder-11.0.0-all.zip $bin\\PFiles\\tmp\\scenebuilder-11.0.0-all\\*",
+        "mv $bin\\PFiles\\SceneBuilder\\app\\scenebuilder-11.0.0-all.zip $bin\\PFiles\\SceneBuilder\\app\\scenebuilder-11.0.0-all.jar"
+    ]
 }
