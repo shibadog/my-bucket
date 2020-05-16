@@ -5,5 +5,6 @@
     "url": [
         "https://download2.gluonhq.com/scenebuilder/11.0.0/install/windows/x64/SceneBuilder-11.0.0.msi"
     ],
-    "bin": "SceneBuilder.exe"
+    "hash": "483df81431af3aa7eb9d2822d1e7c8e569a00aa83948337971f811ceeb4b4469",
+    "bin": "PFiles\\SceneBuilder\\SceneBuilder.exe"
 }
