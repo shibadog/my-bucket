@@ -10,7 +10,7 @@
     ],
 
     "version": "1.0.0",
-    "url": "https://osdn.net/frs/redir.php?m=jaist&f=mix-mplus-ipa%2F72511%2Fmigu-1m-20200307.zip",
+    "url": "https://osdn.net/projects/mix-mplus-ipa/downloads/72511/migu-1m-20200307.zip/",
 
     "installer": {
         "script": "Install-Font -FontPath $dir -Recurse"
