@@ -1,0 +1,10 @@
+{
+    "homepage": "https://buildpacks.io/",
+    "version": "0.11.0",
+    "license": "Apache License 2.0",
+    "url": [
+        "https://github.com/buildpacks/pack/releases/download/v0.11.0/pack-v0.11.0-windows.zip"
+    ],
+    "bin": "pack.exe",
+    "depends": "7zip"
+}
