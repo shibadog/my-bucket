@@ -6,5 +6,9 @@
         "https://github.com/mithrandie/csvq/releases/download/v1.15.2/csvq-v1.15.2-windows-amd64.tar.gz"
     ],
     "checkver": "github",
-    "bin": "csvq.exe"
+    "post_install": [
+        "mv $original_dir\\csvq*\\** $original_dir"
+    ],
+    "bin": "csvq.exe",
+    "depends": "7zip"
 }
