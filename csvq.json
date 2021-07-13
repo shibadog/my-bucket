@@ -8,7 +8,7 @@
     "checkver": "github",
     "hash": "bfe67d463429b6981893789e534a565204c5102befc12c76963803daaa81aa89",
     "post_install": [
-        "mv $original_dir\\csvq*\\** $original_dir"
+        "mv $dir\\csvq*\\** $$dir"
     ],
     "bin": "csvq.exe",
     "depends": "7zip"
