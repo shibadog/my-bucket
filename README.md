@@ -9,5 +9,5 @@ https://github.com/shibadog/my_bucket2
 
 ```
 > scoop bucket rm my-bucket
-> scoop bucket add my-bucket https://github.com/shibadog/my_bucket2
+> scoop bucket add my-bucket https://github.com/shibadog/my-bucket2
 ```
